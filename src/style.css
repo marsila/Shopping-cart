@@ -1,0 +1,178 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  font-family: sans-serif;
+  position: relative;
+}
+a {
+  text-decoration: none;
+  color: bisque;
+}
+
+/**
+* ! navbar styles are here
+**/
+
+.navbar{
+  background-color:rgb(78, 6, 78);
+  color: bisque;
+  padding: 25px 60px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-bottom: 5px;
+}
+.cart{
+  padding: 5px;
+  font-size:30px ;
+  position: relative;
+  cursor: pointer;
+}
+
+.cartAmount{
+  font-size: 16px;
+  position: absolute;
+  top: -12px;
+  right: 0;
+  padding: 2px;
+  border-radius: 10px;
+  background-color:bisque;
+  color: black;
+}
+
+.shop {
+  display: grid;
+  grid-template-columns: repeat(4,203px);
+  gap:30px;
+  justify-content: center;
+}
+
+@media (max-width: 1000px) {
+  .shop {
+    grid-template-columns: repeat(2, 203px);
+  }
+}
+
+@media (max-width: 500px) {
+  .shop {
+    grid-template-columns: repeat(1, 203px);
+  }
+}
+
+.item{
+  border: 2px solid rgb(78, 6, 78);
+  border-radius: 5px;
+  
+}
+
+.shoppingCart {
+  display: grid;
+  grid-template-columns: repeat(1, 350px);
+  gap: 10 px;
+  justify-content: center;
+}
+
+.cart-items {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 10px;
+}
+
+.details{
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+  gap: 10 px;
+  width: 100%;
+}
+
+.cart-details {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  box-sizing: border-box;
+  width: 100%;
+  margin: 0.3em;
+}
+
+.name-price {
+  display: flex;
+  flex-direction: row;  
+  justify-content: space-between;
+  align-items: center;  
+}
+
+.name-price h3 {
+  font-size: small;
+}
+
+.cart-price {
+  color:bisque;
+  border: 1px solid black;
+  border-radius: 5px;
+  background-color:rgb(78, 6, 78);
+}
+
+.price-quantity{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.buttons{
+  display: flex;
+  flex-direction: row;
+  gap: 8px;
+  font-size: 16px;
+}
+
+i, button {
+  cursor: pointer;
+}
+.bi-dash{
+  color:red;
+}
+
+.bi-plus {
+  color: green;
+}
+
+.lable {
+  text-align: center;
+  width:70%;
+  margin: auto;
+  line-height: 3em;
+}
+.close {
+  font-size: 1.3em;
+  position:relative;
+  right: -5;
+}
+
+button {
+  font-weight: bold;
+  color: aliceblue;
+  border-radius: 5px;
+  padding: 0.3em;  
+  box-shadow: 5px gray;
+}
+.back {  
+  color: aliceblue;
+  background-color:rgb(78, 6, 78);  
+}
+
+.check-out {  
+  background-color:rgb(5, 53, 23);
+  border: 1px solid rgb(76, 149, 98);  
+}
+
+.clear-cart {
+  background-color:rgb(117, 10, 10);
+  border: 1px solid rgb(191, 93, 93); 
+}
+
